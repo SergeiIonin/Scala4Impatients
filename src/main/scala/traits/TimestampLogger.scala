@@ -2,6 +2,7 @@ package traits
 
 trait TimestampLogger extends ConsoleLogger {
   override def log(msg: String) {
-    super[ConsoleLogger].log(s"${java.time.Instant.now} $msg")
+    super.log(s"${java.time.Instant.now} $msg")
+    //super[ConsoleLogger].log(s"${java.time.Instant.now} $msg")
   }
 }
