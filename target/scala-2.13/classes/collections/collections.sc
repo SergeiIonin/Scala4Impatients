@@ -29,10 +29,16 @@ def sum2(list: List[Int]): Int = list match {
 
 sum2(List(1,3,5,7))
 
+
 val seq3 = Seq(1,2,3,-5,-10,6,8)
-val seqRes = seq3.takeWhile(z => z<0)
+
+val seq3N = seq3.toList.takeRight(4)
+
+val seqRes = seq3//.takeWhile(z => z<0)
 
 val seq4 = seq3.map(_*2)
+
+//seq3.collect()
 
 val seqZip = seq3 zip seq4
 
