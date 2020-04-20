@@ -1,7 +1,10 @@
 class Person(val age: Int, sex: String) { // parameters will be not accessible in the companion object
+  import Person._
   private val p = true // will be accessible in the companion object
   def yearsToRetirement = if (Person.o_p) Person.getYearsToRetirement(this.age, this.sex)
   def printPerson = s"age is ${this.age} and sex is ${this.sex}"
+  val field = 1
+  o_p
 }
 
 object Person {

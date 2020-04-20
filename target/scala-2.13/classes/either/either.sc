@@ -28,4 +28,4 @@ right1.
 
 val filt1 = Left(12).left.filter(_ > 10)  // Some(Left(12))
 val filt2 = Left(7).left.filter(_ > 10)   // None
-val filt3 = Right(12).right.filter(_ > 10) // None
+val filt3 = Right(12).right.filter(_ > 10) // Some(Right(12))

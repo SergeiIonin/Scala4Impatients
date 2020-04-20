@@ -1,5 +1,7 @@
 import general.General._
 
+Set(1, 2) == Set(2, 1)
+
 val books = List(Book("Book1 Active", 1986, ACTIVE),
   Book("Book2 Active", 1953, ACTIVE),
   Book("Book3 Active", 2001, ACTIVE),
@@ -21,6 +23,7 @@ val booksUpdSpan = books.groupBy(_.year < 1960)
 booksUpdSpan(false) mkString "\n"
 booksUpdSpan(true) mkString "\n"
 
+nums.asInstanceOf[String]
 
 
 val booksUpd = books map {
@@ -30,3 +33,4 @@ val booksUpd = books map {
 }
 
 val booksFinal = booksUpd.span(_.status != SUPER)
+
